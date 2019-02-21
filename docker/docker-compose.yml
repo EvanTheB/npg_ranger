@@ -4,7 +4,7 @@ services:
   rangerdb:
     image: mongo:3.2.10
     volumes:
-      - ../../../../data/mongo:/data/db
+      - ../test/server/data/mongo:/data/db
 
   ranger:
     build: ./ranger
@@ -15,7 +15,7 @@ services:
     volumes:
       - ../test/server/data:/seqdata:ro # For access for phix bam files
       - ./ranger:/appconf # For access to configuration files
-      - ../../../../references:/references:ro
+      - ../test/server/data/references:/references:ro
     command: npg_ranger_server -s --loglevel warn -c /appconf/config.json
     entrypoint: /wait-for-it.sh rangerdb:27017 --
     links:
@@ -26,7 +26,7 @@ services:
   rangerproxy:
     build: ./rangerproxy
     volumes:
-      - ../../../../references:/references:ro
+      - ../test/server/data/references:/references:ro
     ports:
       - "9090:9090"
     links:

@@ -1,0 +1,12 @@
+https://htsget.wtsi-npg-test.co.uk:9090/npg_ranger/sample/NA12878/reference
+{"accession":"NA12878","reference":"references/Homo_sapiens/1000Genomes_hs37d5/all/fasta/hs37d5.fa"}
+
+
+
+https://htsget.wtsi-npg-test.co.uk:9090/references/Homo_sapiens/1000Genomes_hs37d5/all/blat/hs37d5.fa.2bit
+
+https://htsget.wtsi-npg-test.co.uk:9090/npg_ranger/ga4gh/sample/NA12878?referenceName=1&start=124625052&end=124625568&format=BAM
+{"htsget":{"urls":[{"url":"https://htsget.wtsi-npg-test.co.uk:9090/npg_ranger/sample?accession=NA12878&format=BAM&region=1%3A124625053-124625568"}],"format":"BAM"}}
+
+https://htsget.wtsi-npg-test.co.uk:9090/npg_ranger/sample?accession=NA12878&format=BAM&region=1:124625053-124625568
+

@@ -1,0 +1,16 @@
+[
+  {
+    "collection": "CH",
+    "data_object": "NA12878_2.bam",
+    "avh": {
+      "target": "1",
+      "alignment": "1",
+      "reference": "references/hs37d5x.fa",
+      "sample_accession_number": "NA12878_2",
+      "manual_qc": "1",
+      "type": "bam"
+    },
+    "filepath_by_host": {
+      "*": "NA12878_1.small.1.bam"
+    }
+}]
